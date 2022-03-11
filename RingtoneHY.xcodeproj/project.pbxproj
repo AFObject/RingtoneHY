@@ -1,0 +1,586 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		18ACC3D827DB457000BD26F0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC3D727DB457000BD26F0 /* AppDelegate.swift */; };
+		18ACC3DA27DB457000BD26F0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC3D927DB457000BD26F0 /* ViewController.swift */; };
+		18ACC3DC27DB457200BD26F0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18ACC3DB27DB457200BD26F0 /* Assets.xcassets */; };
+		18ACC3DF27DB457200BD26F0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18ACC3DD27DB457200BD26F0 /* Main.storyboard */; };
+		18ACC3EA27DB457200BD26F0 /* RingtoneHYTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC3E927DB457200BD26F0 /* RingtoneHYTests.swift */; };
+		18ACC3F427DB457200BD26F0 /* RingtoneHYUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC3F327DB457200BD26F0 /* RingtoneHYUITests.swift */; };
+		18ACC3F627DB457200BD26F0 /* RingtoneHYUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18ACC3F527DB457200BD26F0 /* RingtoneHYUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		18ACC3E627DB457200BD26F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18ACC3CC27DB457000BD26F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18ACC3D327DB457000BD26F0;
+			remoteInfo = RingtoneHY;
+		};
+		18ACC3F027DB457200BD26F0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 18ACC3CC27DB457000BD26F0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 18ACC3D327DB457000BD26F0;
+			remoteInfo = RingtoneHY;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		18ACC3D427DB457000BD26F0 /* RingtoneHY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RingtoneHY.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		18ACC3D727DB457000BD26F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		18ACC3D927DB457000BD26F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		18ACC3DB27DB457200BD26F0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		18ACC3DE27DB457200BD26F0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		18ACC3E027DB457200BD26F0 /* RingtoneHY.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RingtoneHY.entitlements; sourceTree = "<group>"; };
+		18ACC3E527DB457200BD26F0 /* RingtoneHYTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RingtoneHYTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18ACC3E927DB457200BD26F0 /* RingtoneHYTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingtoneHYTests.swift; sourceTree = "<group>"; };
+		18ACC3EF27DB457200BD26F0 /* RingtoneHYUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RingtoneHYUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		18ACC3F327DB457200BD26F0 /* RingtoneHYUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingtoneHYUITests.swift; sourceTree = "<group>"; };
+		18ACC3F527DB457200BD26F0 /* RingtoneHYUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RingtoneHYUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		18ACC3D127DB457000BD26F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18ACC3E227DB457200BD26F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18ACC3EC27DB457200BD26F0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		18ACC3CB27DB457000BD26F0 = {
+			isa = PBXGroup;
+			children = (
+				18ACC3D627DB457000BD26F0 /* RingtoneHY */,
+				18ACC3E827DB457200BD26F0 /* RingtoneHYTests */,
+				18ACC3F227DB457200BD26F0 /* RingtoneHYUITests */,
+				18ACC3D527DB457000BD26F0 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		18ACC3D527DB457000BD26F0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				18ACC3D427DB457000BD26F0 /* RingtoneHY.app */,
+				18ACC3E527DB457200BD26F0 /* RingtoneHYTests.xctest */,
+				18ACC3EF27DB457200BD26F0 /* RingtoneHYUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		18ACC3D627DB457000BD26F0 /* RingtoneHY */ = {
+			isa = PBXGroup;
+			children = (
+				18ACC3D727DB457000BD26F0 /* AppDelegate.swift */,
+				18ACC3D927DB457000BD26F0 /* ViewController.swift */,
+				18ACC3DB27DB457200BD26F0 /* Assets.xcassets */,
+				18ACC3DD27DB457200BD26F0 /* Main.storyboard */,
+				18ACC3E027DB457200BD26F0 /* RingtoneHY.entitlements */,
+			);
+			path = RingtoneHY;
+			sourceTree = "<group>";
+		};
+		18ACC3E827DB457200BD26F0 /* RingtoneHYTests */ = {
+			isa = PBXGroup;
+			children = (
+				18ACC3E927DB457200BD26F0 /* RingtoneHYTests.swift */,
+			);
+			path = RingtoneHYTests;
+			sourceTree = "<group>";
+		};
+		18ACC3F227DB457200BD26F0 /* RingtoneHYUITests */ = {
+			isa = PBXGroup;
+			children = (
+				18ACC3F327DB457200BD26F0 /* RingtoneHYUITests.swift */,
+				18ACC3F527DB457200BD26F0 /* RingtoneHYUITestsLaunchTests.swift */,
+			);
+			path = RingtoneHYUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		18ACC3D327DB457000BD26F0 /* RingtoneHY */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18ACC3F927DB457200BD26F0 /* Build configuration list for PBXNativeTarget "RingtoneHY" */;
+			buildPhases = (
+				18ACC3D027DB457000BD26F0 /* Sources */,
+				18ACC3D127DB457000BD26F0 /* Frameworks */,
+				18ACC3D227DB457000BD26F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RingtoneHY;
+			productName = RingtoneHY;
+			productReference = 18ACC3D427DB457000BD26F0 /* RingtoneHY.app */;
+			productType = "com.apple.product-type.application";
+		};
+		18ACC3E427DB457200BD26F0 /* RingtoneHYTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18ACC3FC27DB457200BD26F0 /* Build configuration list for PBXNativeTarget "RingtoneHYTests" */;
+			buildPhases = (
+				18ACC3E127DB457200BD26F0 /* Sources */,
+				18ACC3E227DB457200BD26F0 /* Frameworks */,
+				18ACC3E327DB457200BD26F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18ACC3E727DB457200BD26F0 /* PBXTargetDependency */,
+			);
+			name = RingtoneHYTests;
+			productName = RingtoneHYTests;
+			productReference = 18ACC3E527DB457200BD26F0 /* RingtoneHYTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		18ACC3EE27DB457200BD26F0 /* RingtoneHYUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 18ACC3FF27DB457200BD26F0 /* Build configuration list for PBXNativeTarget "RingtoneHYUITests" */;
+			buildPhases = (
+				18ACC3EB27DB457200BD26F0 /* Sources */,
+				18ACC3EC27DB457200BD26F0 /* Frameworks */,
+				18ACC3ED27DB457200BD26F0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				18ACC3F127DB457200BD26F0 /* PBXTargetDependency */,
+			);
+			name = RingtoneHYUITests;
+			productName = RingtoneHYUITests;
+			productReference = 18ACC3EF27DB457200BD26F0 /* RingtoneHYUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		18ACC3CC27DB457000BD26F0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1320;
+				TargetAttributes = {
+					18ACC3D327DB457000BD26F0 = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+					18ACC3E427DB457200BD26F0 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 18ACC3D327DB457000BD26F0;
+					};
+					18ACC3EE27DB457200BD26F0 = {
+						CreatedOnToolsVersion = 13.2.1;
+						TestTargetID = 18ACC3D327DB457000BD26F0;
+					};
+				};
+			};
+			buildConfigurationList = 18ACC3CF27DB457000BD26F0 /* Build configuration list for PBXProject "RingtoneHY" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 18ACC3CB27DB457000BD26F0;
+			productRefGroup = 18ACC3D527DB457000BD26F0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				18ACC3D327DB457000BD26F0 /* RingtoneHY */,
+				18ACC3E427DB457200BD26F0 /* RingtoneHYTests */,
+				18ACC3EE27DB457200BD26F0 /* RingtoneHYUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		18ACC3D227DB457000BD26F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18ACC3DC27DB457200BD26F0 /* Assets.xcassets in Resources */,
+				18ACC3DF27DB457200BD26F0 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18ACC3E327DB457200BD26F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18ACC3ED27DB457200BD26F0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		18ACC3D027DB457000BD26F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18ACC3DA27DB457000BD26F0 /* ViewController.swift in Sources */,
+				18ACC3D827DB457000BD26F0 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18ACC3E127DB457200BD26F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18ACC3EA27DB457200BD26F0 /* RingtoneHYTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		18ACC3EB27DB457200BD26F0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				18ACC3F427DB457200BD26F0 /* RingtoneHYUITests.swift in Sources */,
+				18ACC3F627DB457200BD26F0 /* RingtoneHYUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		18ACC3E727DB457200BD26F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18ACC3D327DB457000BD26F0 /* RingtoneHY */;
+			targetProxy = 18ACC3E627DB457200BD26F0 /* PBXContainerItemProxy */;
+		};
+		18ACC3F127DB457200BD26F0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 18ACC3D327DB457000BD26F0 /* RingtoneHY */;
+			targetProxy = 18ACC3F027DB457200BD26F0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		18ACC3DD27DB457200BD26F0 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				18ACC3DE27DB457200BD26F0 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		18ACC3F727DB457200BD26F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		18ACC3F827DB457200BD26F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		18ACC3FA27DB457200BD26F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RingtoneHY/RingtoneHY.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XG7269D873;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AFObject.RingtoneHY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		18ACC3FB27DB457200BD26F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RingtoneHY/RingtoneHY.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XG7269D873;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AFObject.RingtoneHY;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		18ACC3FD27DB457200BD26F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XG7269D873;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AFObject.RingtoneHYTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RingtoneHY.app/Contents/MacOS/RingtoneHY";
+			};
+			name = Debug;
+		};
+		18ACC3FE27DB457200BD26F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XG7269D873;
+				GENERATE_INFOPLIST_FILE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 12.1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AFObject.RingtoneHYTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/RingtoneHY.app/Contents/MacOS/RingtoneHY";
+			};
+			name = Release;
+		};
+		18ACC40027DB457200BD26F0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XG7269D873;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AFObject.RingtoneHYUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = RingtoneHY;
+			};
+			name = Debug;
+		};
+		18ACC40127DB457200BD26F0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XG7269D873;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = AFObject.RingtoneHYUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = RingtoneHY;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		18ACC3CF27DB457000BD26F0 /* Build configuration list for PBXProject "RingtoneHY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18ACC3F727DB457200BD26F0 /* Debug */,
+				18ACC3F827DB457200BD26F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18ACC3F927DB457200BD26F0 /* Build configuration list for PBXNativeTarget "RingtoneHY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18ACC3FA27DB457200BD26F0 /* Debug */,
+				18ACC3FB27DB457200BD26F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18ACC3FC27DB457200BD26F0 /* Build configuration list for PBXNativeTarget "RingtoneHYTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18ACC3FD27DB457200BD26F0 /* Debug */,
+				18ACC3FE27DB457200BD26F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		18ACC3FF27DB457200BD26F0 /* Build configuration list for PBXNativeTarget "RingtoneHYUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				18ACC40027DB457200BD26F0 /* Debug */,
+				18ACC40127DB457200BD26F0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 18ACC3CC27DB457000BD26F0 /* Project object */;
+}
