@@ -41,6 +41,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1896CA5727E0B7C700E6331B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		18ACC3D427DB457000BD26F0 /* RingtoneHY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RingtoneHY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18ACC3D727DB457000BD26F0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18ACC3D927DB457000BD26F0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -89,6 +90,7 @@
 		18ACC3CB27DB457000BD26F0 = {
 			isa = PBXGroup;
 			children = (
+				1896CA5727E0B7C700E6331B /* README.md */,
 				18ACC3D627DB457000BD26F0 /* RingtoneHY */,
 				18ACC3E827DB457200BD26F0 /* RingtoneHYTests */,
 				18ACC3F227DB457200BD26F0 /* RingtoneHYUITests */,
