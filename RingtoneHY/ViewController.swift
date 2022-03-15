@@ -60,6 +60,9 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate {
             initializeQueue()
         }
         
+        while queue.count > 0 && queue.first!.0 < .now {
+            queue.removeFirst()
+        }
         if let current = queue.first {
             if Time.timeEqual(current.0, .now) {
                 AVAudioPlayer.ring(type: current.0.music)
