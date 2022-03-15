@@ -36,7 +36,7 @@ struct TaskView: View {
             }.padding([.leading])
                 .padding([.top], 6)
         }.frame(width: 155, height: 100, alignment: .topLeading)
-            .background(Color.indigo)
+            .background(Color(red: 88 / 255, green: 86 / 255, blue: 214 / 255))
             .foregroundColor(.white)
             .clipShape(RoundedRectangle(cornerRadius: 15))
             .shadow(radius: 3)
@@ -112,7 +112,7 @@ struct TaskListView: View, TaskViewManager {
                     .frame(width: 45, height: 45)
                     
             }.frame(width: 155, height: 100)
-                .background(.thickMaterial)
+                .background(Color(white: 50, opacity: 0.2))
                 .clipShape(RoundedRectangle(cornerRadius: 15))
                 .buttonStyle(.borderless)
                 .shadow(radius: 3)

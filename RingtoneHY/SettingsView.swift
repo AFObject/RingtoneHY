@@ -20,7 +20,9 @@ struct SettingsView: View {
             ScrollView {
                 Form {
                     ForEach(1...7, id: \.self) { i in
-                        Section("周" + .weekdayName(of: i)) {
+                        Section {
+                            Text(verbatim: "周" + .weekdayName(of: i))
+                                .font(.title)
                             TaskListView(taskList: $taskStorage.lists[i])
                         }
                         Divider()
