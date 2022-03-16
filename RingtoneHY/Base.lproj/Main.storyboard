@@ -349,7 +349,7 @@
         <scene sceneID="hIz-AP-VOD">
             <objects>
                 <viewController title="RingtoneHY" showSeguePresentationStyle="single" id="XfG-lQ-9wD" customClass="ViewController" customModule="RingtoneHY" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" id="m2S-Jp-Qdl">
+                    <view key="view" id="m2S-Jp-Qdl" customClass="ClickableView" customModule="RingtoneHY" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="240" height="150"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
@@ -378,13 +378,13 @@
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="a7h-7g-6Xf">
-                                        <rect key="frame" x="204" y="107" width="24" height="30"/>
+                                    <button focusRingType="none" translatesAutoresizingMaskIntoConstraints="NO" id="a7h-7g-6Xf">
+                                        <rect key="frame" x="204" y="110" width="24" height="24"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="Dne-S7-Gjn"/>
                                             <constraint firstAttribute="width" constant="24" id="JCW-A1-3Le"/>
                                         </constraints>
-                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="clock.circle.fill" catalog="system" imagePosition="only" alignment="center" alternateImage="clock.fill" imageScaling="proportionallyUpOrDown" inset="2" id="iOJ-Yp-mLb">
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" imagePosition="only" alignment="center" focusRingType="none" imageScaling="proportionallyUpOrDown" inset="2" id="iOJ-Yp-mLb">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
@@ -392,13 +392,13 @@
                                             <action selector="showSettings:" target="XfG-lQ-9wD" id="bx6-NM-ZeR"/>
                                         </connections>
                                     </button>
-                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="K8s-9t-oW4">
+                                    <button focusRingType="none" translatesAutoresizingMaskIntoConstraints="NO" id="K8s-9t-oW4">
                                         <rect key="frame" x="176" y="107" width="24" height="30"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="24" id="S4M-Lv-4WR"/>
                                             <constraint firstAttribute="width" constant="24" id="eR9-lw-tgz"/>
                                         </constraints>
-                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="bell.circle" catalog="system" imagePosition="only" alignment="center" alternateImage="clock.fill" imageScaling="proportionallyUpOrDown" inset="2" id="yIt-zM-Giy">
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="bell.circle" catalog="system" imagePosition="only" alignment="center" alternateImage="clock.fill" focusRingType="none" imageScaling="proportionallyUpOrDown" inset="2" id="yIt-zM-Giy">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
@@ -443,6 +443,7 @@
                     </view>
                     <connections>
                         <outlet property="dateLabel" destination="k7b-n8-ZPi" id="H8W-g0-KYz"/>
+                        <outlet property="settingsButton" destination="a7h-7g-6Xf" id="S5f-OA-qTv"/>
                         <outlet property="taskLabel" destination="TWO-MG-Y4V" id="hzY-1N-uUK"/>
                         <outlet property="timeLabel" destination="9yS-r7-zv5" id="bOC-F8-VCh"/>
                         <outlet property="toggleTopButton" destination="K8s-9t-oW4" id="R7c-gQ-NCU"/>
@@ -455,7 +456,6 @@
     </scenes>
     <resources>
         <image name="bell.circle" catalog="system" width="15" height="15"/>
-        <image name="clock.circle.fill" catalog="system" width="15" height="15"/>
         <image name="clock.fill" catalog="system" width="15" height="15"/>
     </resources>
 </document>

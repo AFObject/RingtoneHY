@@ -97,7 +97,7 @@ struct TaskEditView: View {
 
 struct TaskListView: View, TaskViewManager {
     @Binding var taskList: TaskList
-    @State private var newTask: Task = Task("08001", "08402", "New Task")
+    @State private var newTask: Task = Task("08001", "08402", "新任务")
     @State private var editing = false
     
     let rows = Array(repeating: GridItem(), count: 3)
@@ -119,7 +119,7 @@ struct TaskListView: View, TaskViewManager {
         }.frame(width: 500, alignment: .leading)
             .sheet(isPresented: $editing, onDismiss: {
                 taskList.tasks.append(newTask)
-                newTask = Task("08001", "08402", "New Task")
+                newTask = Task("08001", "08402", "新任务")
             }) {
                 TaskEditView(task: $newTask)
             }

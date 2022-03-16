@@ -37,24 +37,26 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate {
     @IBOutlet weak var timeLabel: NSTextField!
     @IBOutlet weak var taskLabel: NSTextField!
     @IBOutlet weak var toggleTopButton: NSButton!
-    var settingsController: NSViewController?
+    @IBOutlet weak var settingsButton: NSButton!
     
+    var settingsController: NSViewController?
     private var queue: [(Time, String, Bool)] = []
     private var storedWeekday = -1
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        if #available(macOS 12.0, *) {
+            settingsButton.image = NSImage(systemSymbolName: "clock.circle.fill", accessibilityDescription: nil)
+        } else {
+            settingsButton.image = NSImage(systemSymbolName: "clock.fill", accessibilityDescription: nil)
+        }
+        
         initializeQueue()
         updateTime()
 
         let timer = Timer(timeInterval: 2.0, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
         RunLoop.current.add(timer, forMode: .default)
-    }
-    
-    override func viewWillAppear() {
-        super.viewWillAppear()
-        
     }
     
     @IBAction func toggleTop(_ sender: Any?) {
@@ -71,7 +73,7 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate {
     
     @objc func updateTime() {
         dateLabel.stringValue = "\(DateManager.month) 月 \(DateManager.day) 日 / 周\(String.weekdayName(of: DateManager.weekday))"
-        timeLabel.stringValue = String(format: "%d:%02d", DateManager.hour, DateManager.minute)
+        timeLabel.stringValue = Time.now.timeString
         
         if DateManager.weekday != storedWeekday {
             initializeQueue()
@@ -87,7 +89,7 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate {
             }
         }
         if let current = queue.first {
-            taskLabel.stringValue = "下一个日程：\(current.1)\(current.2 ? "开始" : "结束")"
+            taskLabel.stringValue = "下一项：\(current.0.timeString) \(current.1)\(current.2 ? "开始" : "结束")"
         } else {
             taskLabel.stringValue = "今日无其他日程"
         }
@@ -118,4 +120,11 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate {
         self.presentAsSheet(settingsController!)
     }
     
+}
+
+class ClickableView: NSView {
+    override func mouseDown(with event: NSEvent) {
+        super.mouseDown(with: event)
+        audioPlayer?.stop()
+    }
 }

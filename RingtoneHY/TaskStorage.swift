@@ -38,7 +38,10 @@ struct Time: Codable, Comparable, Equatable, CustomStringConvertible {
     }
     
     var description: String {
-        String(format: "%d:%02d ", hour, minute) + .audioName(of: music)
+        timeString + " " + .audioName(of: music)
+    }
+    var timeString: String {
+        String(format: "%d:%02d", hour, minute)
     }
 }
 
