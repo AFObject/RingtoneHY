@@ -1,6 +1,5 @@
 # 华育中学铃声系统 RingtoneHY Project v2
 
-
 ## 关于本项目
 
 华育中学铃声系统项目（下简称 RingtoneHY）起始于 2020 年疫情期间，是一款 macOS 原生 App，用于在网课期间提供模拟校园铃声的功能，由 23 届 7 班 23786 开发。在 2022 年疫情网课期间进行了完全重构，增加了自定义时间与课程表提醒等内容。
@@ -11,7 +10,7 @@
 
 ### 安装前检查
 
-由于开发精力有限，无暇顾及向下兼容，RingtoneHY 能且仅能安装在 macOS 12 Monterey 上。本应用同时适用于 Intel Silicon 和 Apple Silicon 的 Mac。您可以在安装前检查您的 macOS 版本。此外，请确定您设置了正确的时区，本软件采用了系统时间，而非 UTC+8 进行铃声的播放。
+由于开发精力有限，无暇顾及向下兼容，RingtoneHY 能且仅能安装在 macOS 11 Big Sur、macOS 12 Monterey 的各个版本上。本应用同时适用于 Intel Silicon 和 Apple Silicon 的 Mac。您可以在安装前检查您的 macOS 版本，或在 Apple 官网获取相关信息。此外，请确定您设置了正确的时区，本软件采用了系统时间，而非 UTC+8 进行铃声的播放。
 
 ### 安装
 
@@ -22,36 +21,35 @@
 若提示「恶意软件」：
 
 1. 弹出窗口后，请不要关闭窗口，打开 系统偏好设置 - 安全性与隐私 - 通用。
-
 2. 不断尝试，直到显现「已阻止使用……身份不明的开发者」字样。
-
 3. 点击旁边的「仍要打开」，即可打开应用。
-
 4. 其他错误情形，请使用 Google、Bing、Baidu 等搜索引擎寻找答案。
 
 ## 使用
 
 ### 基本功能
 
-![](https://tva1.sinaimg.cn/large/e6c9d24egy1h0atqeaslxj20g20budga.jpg)
+![](https://tva1.sinaimg.cn/large/e6c9d24egy1h0c2m1v2dsj20gu0c4gm6.jpg)
 
 RingtoneHY 的主界面仅包含时钟、「下一个日程」提示、日程表按钮。
 
 您可以拖动主界面的顶部以拖动窗口。
 
-如果您不进行任何设置，RingtoneHY 自安装即可进行周一至周五每天 9 节课、2 次眼保健操，以及早晨点名、午自修的铃声播放。
+如果您不进行任何设置，RingtoneHY 自安装即可进行周一至周五每天 9 节课、2 次眼保健操，以及早晨点名、午自修的铃声播放。点击窗口的任意位置以停止播放当前铃声。
 
-「下一个日程」显示的是当天下一个响铃的时间点的任务名称，如「第 2 节课开始」、「眼保健操」等。
+点击右上角靠左的按钮进行窗口置顶设置。当图标为实心时，窗口置顶；当图标为空心时，窗口不置顶。
+
+「下一项」显示的是当天下一个响铃的时间点的任务名称，如「第 2 节课开始」、「眼保健操」等。
 
 ### 编辑功能
 
 由于不同年级、班级的时间表可能会动态调整，我们加入了「课程表」和「铃声编辑」功能。点击主界面右上角的时钟图标进行编辑。
 
-![](https://tva1.sinaimg.cn/large/e6c9d24egy1h0atqpivkhj20uk0qgwgi.jpg)
+![](https://tva1.sinaimg.cn/large/e6c9d24egy1h0c2mv8v5gj21000sg0va.jpg)
 
 您可以点击任意一个任务模块右上角的「调整」按钮，编辑任务的名称和开始、结束时间及铃声。您可以修改任务名称为当节课的名称，以达到「课程表」的效果。同时，您也可以点击「删除」按钮以删除任务。
 
-点击周日至周六任意一天的「+」按钮，以添加一个任务。
+点击周日至周六任意一天的「+」按钮，以添加一个任务，如给自己设置自修课时间等。
 
 您做的任何修改都会被自动保存，但在点击「完成」后才会生效。
 
@@ -69,7 +67,7 @@ RingtoneHY 开源在 GitHub 仓库 AFObject/RingtoneHY。您可以在 GitHub 上
 
 此部分可能有助于理解软件的运作模式。
 
-RingtoneHY 是 macOS 原生 App，采用 Apple Swift 语言进行开发，AppKit 与 SwiftUI 混合的方式搭建 UI。其中 App 生态采用 AppKit，任务设置界面采用 SwiftUI。两者通过 `NSHostingController` 结合。采用 AVFoundation 库播放铃声。Xcode Version 为 13.3 (13E113)。
+RingtoneHY 是 macOS 原生 App，采用 Apple Swift 语言进行开发，AppKit 与 SwiftUI 混合的方式搭建 UI。其中 App 生态采用 AppKit，任务设置界面采用 SwiftUI。两者通过 `NSHostingController` 结合。采用 AVFoundation 库播放铃声。Xcode Version 为 13.3 (13E113)，macOS Version 为 12.3。
 
 所有 App 的数据存储在默认的用户设置文件夹中。App 的数据模型有：`Time`、`Task`、`TaskList`、`TaskStorage`，分别保存一个响铃时间点、一个完整的任务、一天的全部任务以及所有的任务列表。
 
@@ -77,4 +75,4 @@ RingtoneHY 是 macOS 原生 App，采用 Apple Swift 语言进行开发，AppKit
 
 ## 最后
 
-本软件不仅作为本人使用 SwiftUI 开发应用的一个尝试，更希望能一定程度上帮助到部分同学。但是，希望疫情尽快过去，这个「铃声系统」没有用武之地。
+由于经验不足和时间仓促，RingtoneHY 可能会有不少不足之处，希望大家能够谅解。本软件不仅作为本人使用 SwiftUI 开发应用的一个尝试，更希望能一定程度上帮助到部分同学。但是，希望疫情尽快过去，这个「铃声系统」没有用武之地。
