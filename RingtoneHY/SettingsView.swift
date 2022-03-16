@@ -7,10 +7,6 @@
 
 import SwiftUI
 
-extension NSNotification.Name {
-    static let didChangeSettingsNotification = NSNotification.Name("RingtoneHYDidChangeSettingsNotification")
-}
-
 struct SettingsView: View {
     var onCompletion: () -> () = {}
     @State private var taskStorage: TaskStorage = .default

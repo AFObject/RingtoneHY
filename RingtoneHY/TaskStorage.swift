@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Time: Codable, Comparable, Equatable, CustomStringConvertible, Hashable {
+struct Time: Codable, Comparable, Equatable, CustomStringConvertible {
     var hour: Int
     var minute: Int
     var music: Int
@@ -40,15 +40,9 @@ struct Time: Codable, Comparable, Equatable, CustomStringConvertible, Hashable {
     var description: String {
         String(format: "%d:%02d ", hour, minute) + .audioName(of: music)
     }
-    
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(hour)
-        hasher.combine(minute)
-        hasher.combine(music)
-    }
 }
 
-struct Task: Codable, Equatable, Hashable {
+struct Task: Codable, Equatable, Identifiable {
     var start: Time
     var end: Time
     var name: String
@@ -64,11 +58,12 @@ struct Task: Codable, Equatable, Hashable {
         lhs.start == rhs.start && lhs.end == rhs.end && lhs.name == rhs.name
     }
     
-    func hash(into hasher: inout Hasher) {
-        hasher.combine(start)
-        hasher.combine(end)
-        hasher.combine(name)
+    enum CodingKeys: String, CodingKey {
+        case start = "start"
+        case end = "end"
+        case name = "name"
     }
+    
 }
 
 struct TaskList: Codable, Equatable {
