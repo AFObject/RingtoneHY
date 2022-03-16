@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct Time: Codable, Comparable, Equatable, CustomStringConvertible {
+struct Time: Codable, Comparable, Equatable, CustomStringConvertible, Hashable {
     var hour: Int
     var minute: Int
     var music: Int
@@ -40,13 +40,19 @@ struct Time: Codable, Comparable, Equatable, CustomStringConvertible {
     var description: String {
         String(format: "%d:%02d ", hour, minute) + .audioName(of: music)
     }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(hour)
+        hasher.combine(minute)
+        hasher.combine(music)
+    }
 }
 
-struct Task: Codable, Equatable {
-    // let id = UUID()
+struct Task: Codable, Equatable, Hashable {
     var start: Time
     var end: Time
     var name: String
+    let id = UUID()
     
     init(_ start: String, _ end: String, _ name: String) {
         self.start = Time(start)
@@ -56,6 +62,12 @@ struct Task: Codable, Equatable {
     static func == (lhs: Task, rhs: Task) -> Bool {
         // 大家好，下面这行我边看 A-SOUL 边写成了 lhs.start == lhs.start 调了一整天，一个魂屁用没有，望周知。
         lhs.start == rhs.start && lhs.end == rhs.end && lhs.name == rhs.name
+    }
+    
+    func hash(into hasher: inout Hasher) {
+        hasher.combine(start)
+        hasher.combine(end)
+        hasher.combine(name)
     }
 }
 

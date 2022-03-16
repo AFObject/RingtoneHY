@@ -103,8 +103,8 @@ struct TaskListView: View, TaskViewManager {
     let rows = Array(repeating: GridItem(), count: 3)
     var body: some View {
         LazyVGrid(columns: rows) {
-            ForEach(0..<taskList.tasks.count, id: \.self) { i in
-                TaskView(task: $taskList.tasks[i], manager: self)
+            ForEach($taskList.tasks, id: \.id) { i in
+                TaskView(task: i, manager: self)
             }
             Button(action: addItem) {
                 Image(systemName: "plus.circle.fill")
@@ -119,6 +119,7 @@ struct TaskListView: View, TaskViewManager {
         }.frame(width: 500, alignment: .leading)
             .sheet(isPresented: $editing, onDismiss: {
                 taskList.tasks.append(newTask)
+                newTask = Task("08001", "08402", "new Task")
             }) {
                 TaskEditView(task: $newTask)
             }
