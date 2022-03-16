@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
+<document type="com.apple.InterfaceBuilder3.Cocoa.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES" initialViewController="B8D-0N-5wS">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="19529"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="20037"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -357,7 +357,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="150"/>
                                 <subviews>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="k7b-n8-ZPi">
-                                        <rect key="frame" x="18" y="114" width="96" height="16"/>
+                                        <rect key="frame" x="18" y="114" width="140" height="16"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="16" id="8bF-w4-gZ6"/>
                                         </constraints>
@@ -368,7 +368,7 @@
                                         </textFieldCell>
                                     </textField>
                                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="9yS-r7-zv5">
-                                        <rect key="frame" x="18" y="39" width="170" height="71"/>
+                                        <rect key="frame" x="18" y="39" width="204" height="71"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="71" id="Hpz-7z-2WK"/>
                                         </constraints>
@@ -378,22 +378,11 @@
                                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                         </textFieldCell>
                                     </textField>
-                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TWO-MG-Y4V">
-                                        <rect key="frame" x="20" y="22" width="164" height="16"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="16" id="SyK-eC-kgE"/>
-                                        </constraints>
-                                        <textFieldCell key="cell" lineBreakMode="clipping" title="下一个任务：A-SOUL 直播" id="pMR-nc-McU">
-                                            <font key="font" metaFont="system"/>
-                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
-                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
-                                        </textFieldCell>
-                                    </textField>
                                     <button translatesAutoresizingMaskIntoConstraints="NO" id="a7h-7g-6Xf">
-                                        <rect key="frame" x="203" y="107" width="25" height="31"/>
+                                        <rect key="frame" x="204" y="107" width="24" height="30"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" constant="25" id="j9u-f1-Do1"/>
-                                            <constraint firstAttribute="height" constant="25" id="t1k-iX-5Ay"/>
+                                            <constraint firstAttribute="height" constant="24" id="Dne-S7-Gjn"/>
+                                            <constraint firstAttribute="width" constant="24" id="JCW-A1-3Le"/>
                                         </constraints>
                                         <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="clock.circle.fill" catalog="system" imagePosition="only" alignment="center" alternateImage="clock.fill" imageScaling="proportionallyUpOrDown" inset="2" id="iOJ-Yp-mLb">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -403,18 +392,45 @@
                                             <action selector="showSettings:" target="XfG-lQ-9wD" id="bx6-NM-ZeR"/>
                                         </connections>
                                     </button>
+                                    <button translatesAutoresizingMaskIntoConstraints="NO" id="K8s-9t-oW4">
+                                        <rect key="frame" x="176" y="107" width="24" height="30"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="24" id="S4M-Lv-4WR"/>
+                                            <constraint firstAttribute="width" constant="24" id="eR9-lw-tgz"/>
+                                        </constraints>
+                                        <buttonCell key="cell" type="square" bezelStyle="shadowlessSquare" image="bell.circle" catalog="system" imagePosition="only" alignment="center" alternateImage="clock.fill" imageScaling="proportionallyUpOrDown" inset="2" id="yIt-zM-Giy">
+                                            <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
+                                            <font key="font" metaFont="system"/>
+                                        </buttonCell>
+                                        <connections>
+                                            <action selector="toggleTop:" target="XfG-lQ-9wD" id="Qq1-na-rd6"/>
+                                        </connections>
+                                    </button>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="TWO-MG-Y4V">
+                                        <rect key="frame" x="18" y="20" width="204" height="16"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" title="下一个日程：A-SOUL 直播" id="pMR-nc-McU">
+                                            <font key="font" metaFont="system"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="TWO-MG-Y4V" firstAttribute="leading" secondItem="g4I-AG-ubB" secondAttribute="leading" constant="22" id="01J-Ir-4h9"/>
+                                    <constraint firstItem="a7h-7g-6Xf" firstAttribute="top" secondItem="g4I-AG-ubB" secondAttribute="top" constant="16" id="1J5-bO-K8J"/>
                                     <constraint firstItem="k7b-n8-ZPi" firstAttribute="leading" secondItem="g4I-AG-ubB" secondAttribute="leading" constant="20" symbolic="YES" id="1l5-J3-0YO"/>
                                     <constraint firstAttribute="height" constant="150" id="6aB-4a-QxY"/>
                                     <constraint firstAttribute="width" constant="240" id="6tP-lV-6M1"/>
-                                    <constraint firstItem="a7h-7g-6Xf" firstAttribute="top" secondItem="g4I-AG-ubB" secondAttribute="top" constant="15" id="F4R-hS-Y2i"/>
-                                    <constraint firstAttribute="trailing" secondItem="a7h-7g-6Xf" secondAttribute="trailing" constant="12" id="Oz8-HZ-8rj"/>
+                                    <constraint firstItem="TWO-MG-Y4V" firstAttribute="leading" secondItem="9yS-r7-zv5" secondAttribute="leading" id="8Gt-ud-jm3"/>
+                                    <constraint firstAttribute="trailing" secondItem="9yS-r7-zv5" secondAttribute="trailing" constant="20" id="DOB-PI-SeI"/>
+                                    <constraint firstItem="K8s-9t-oW4" firstAttribute="top" secondItem="g4I-AG-ubB" secondAttribute="top" constant="16" id="OXF-gQ-beF"/>
+                                    <constraint firstItem="a7h-7g-6Xf" firstAttribute="leading" secondItem="K8s-9t-oW4" secondAttribute="trailing" constant="4" id="OyA-ir-TY6"/>
                                     <constraint firstItem="k7b-n8-ZPi" firstAttribute="top" secondItem="g4I-AG-ubB" secondAttribute="top" constant="20" symbolic="YES" id="V3n-uu-HUd"/>
+                                    <constraint firstItem="K8s-9t-oW4" firstAttribute="leading" secondItem="k7b-n8-ZPi" secondAttribute="trailing" constant="20" id="YL6-yx-15S"/>
                                     <constraint firstItem="9yS-r7-zv5" firstAttribute="top" secondItem="k7b-n8-ZPi" secondAttribute="bottom" constant="4" id="ZNl-CD-XmD"/>
+                                    <constraint firstAttribute="bottom" secondItem="TWO-MG-Y4V" secondAttribute="bottom" constant="20" symbolic="YES" id="ZZW-7S-s8Y"/>
+                                    <constraint firstAttribute="trailing" secondItem="a7h-7g-6Xf" secondAttribute="trailing" constant="12" id="apU-kp-Pn5"/>
                                     <constraint firstItem="9yS-r7-zv5" firstAttribute="leading" secondItem="g4I-AG-ubB" secondAttribute="leading" constant="20" symbolic="YES" id="iRQ-fq-9tP"/>
-                                    <constraint firstItem="TWO-MG-Y4V" firstAttribute="top" secondItem="9yS-r7-zv5" secondAttribute="bottom" constant="1" id="nrL-RG-oq1"/>
+                                    <constraint firstAttribute="trailing" secondItem="TWO-MG-Y4V" secondAttribute="trailing" constant="20" symbolic="YES" id="vkm-sh-bNV"/>
                                 </constraints>
                             </visualEffectView>
                         </subviews>
@@ -429,6 +445,7 @@
                         <outlet property="dateLabel" destination="k7b-n8-ZPi" id="H8W-g0-KYz"/>
                         <outlet property="taskLabel" destination="TWO-MG-Y4V" id="hzY-1N-uUK"/>
                         <outlet property="timeLabel" destination="9yS-r7-zv5" id="bOC-F8-VCh"/>
+                        <outlet property="toggleTopButton" destination="K8s-9t-oW4" id="R7c-gQ-NCU"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
@@ -437,6 +454,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="bell.circle" catalog="system" width="15" height="15"/>
         <image name="clock.circle.fill" catalog="system" width="15" height="15"/>
         <image name="clock.fill" catalog="system" width="15" height="15"/>
     </resources>

@@ -36,6 +36,7 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate {
     @IBOutlet weak var dateLabel: NSTextField!
     @IBOutlet weak var timeLabel: NSTextField!
     @IBOutlet weak var taskLabel: NSTextField!
+    @IBOutlet weak var toggleTopButton: NSButton!
     var settingsController: NSViewController?
     
     private var queue: [(Time, String, Bool)] = []
@@ -44,12 +45,28 @@ class ViewController: NSViewController, NSUserNotificationCenterDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        // UserDefaults.standard.setValue(TaskStorage.default.data, forKey: .storageKey)
         initializeQueue()
         updateTime()
 
         let timer = Timer(timeInterval: 2.0, target: self, selector: #selector(updateTime), userInfo: nil, repeats: true)
         RunLoop.current.add(timer, forMode: .default)
+    }
+    
+    override func viewWillAppear() {
+        super.viewWillAppear()
+        
+    }
+    
+    @IBAction func toggleTop(_ sender: Any?) {
+        if let window = view.window {
+            if window.level != .floating {
+                window.level = .floating
+                toggleTopButton.image = NSImage(systemSymbolName: "bell.circle.fill", accessibilityDescription: nil)
+            } else {
+                window.level = .normal
+                toggleTopButton.image = NSImage(systemSymbolName: "bell.circle", accessibilityDescription: nil)
+            }
+        }
     }
     
     @objc func updateTime() {
